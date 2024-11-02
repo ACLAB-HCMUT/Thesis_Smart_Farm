@@ -1,14 +1,13 @@
-name: Smart Farm CI
+name: Production CI/CD
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-      - develop
   pull_request:
     paths:
-      - .github/workflows/workflow.yaml
+      - .github/workflows/production_workflow.yaml
 
 jobs:
   # Job 1: Android Lint Check
